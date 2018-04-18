@@ -1,4 +1,4 @@
-.panel {
+.panel1 {
 	width:40%;
 	height:40%;
 	left:0;
@@ -15,10 +15,27 @@
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;	
+}
+.panel2 {
+	width:40%;
+	height:40%;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;
 }
 
-.panel div {
+.panel1 div, .panel2 div {
     display: block;
     height: 100%;
     width: 100%;
@@ -29,14 +46,14 @@
     backface-visibility: hidden;
 }
 
-.panel .back {
+.panel1 .back, .panel2 .back {
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
 
-.panel.flipped {
+.panel1.flipped, .panel2.flipped {
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
