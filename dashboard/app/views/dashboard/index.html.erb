@@ -1,10 +1,18 @@
-<div>
-	<h1>Temperature sensor graph</h1>
-	<a href="#" class="button">
+<div class="center">
+	<h1>Dashboard</h1>
+	<a id = "switch_view" class="button">
 		<span>View Data</span>
+	</a>
+	<a id = "download_data" class="button">
+		<span>Save as Image</span>
 	</a>
 </div>
 
-<div style="width:40%; height:40%; margin: auto; border: 10px;">
-	<canvas id="myChart" width="200" height="200"></canvas>
+<div class = "panel">
+	<div class = "front">
+		<canvas id="temperatureChart" width="200" height="200"></canvas>
+	</div>
+	<div class = "back">
+		<p>Hello!!!</p>
+	</div>	
 </div>

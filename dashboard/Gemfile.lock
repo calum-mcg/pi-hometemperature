@@ -67,6 +67,7 @@ GEM
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.23-x86-mingw32)
+    filesaverjs-rails (1.1.20150716)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.0)
@@ -177,6 +178,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   chart-js-rails
   coffee-rails (~> 4.2)
+  filesaverjs-rails
   jbuilder (~> 2.5)
   jquery-rails
   puma (~> 3.7)
