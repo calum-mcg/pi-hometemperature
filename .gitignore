@@ -42,3 +42,14 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+/node_modules
+/yarn-error.log
+
