@@ -9,7 +9,8 @@ $(document).ready(function(){
 	grey: 'rgb(201, 203, 207)',
 	darkgrey: 'rgb(107, 107, 107)'
 	};
-	var roomtemp = [[18,17,18,19,21,22],[16,15,13,17,18,19],[6,5,3,7,8,10],[7,8,5,11,12,11],[17,12,5,10,15,11]];
+	var roomtemp = $('#graphCanvas').data('dataset');
+	var dates = $('#graphCanvas').data('dates');
 	var room1 = roomtemp[0];
 	var room2 = roomtemp[1];
 	var room3 = roomtemp[2];
@@ -30,7 +31,7 @@ $(document).ready(function(){
 	var myChart = new Chart(ctx, {
 	    type: 'line',
 	    data: {
-	        labels: ["17/04/18", "18/04/18", "19/04/18", "20/04/18", "21/04/18", "22/04/18"],
+	        labels: dates,
 	        datasets: [{
 	            label: 'Room 1',
 	            data: room1,
