@@ -21,7 +21,7 @@
 
 <div class = "panel2">
 	<div class = "front">
-		<%= content_tag "div", id: "graphCanvas", data: {dataset: @temperatureDataset, dates: @dates} do %><% end %>
+		<%= content_tag "div", id: "graphCanvas", data: {dataset: @temperatureDataset, dates: @dates, roomNumber: @roomNumber} do %><% end %>
 		<canvas id="temperatureChart" width="200" height="200"></canvas>
 	</div>
 	<div class = "back">

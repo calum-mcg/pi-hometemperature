@@ -11,6 +11,7 @@ $(document).ready(function(){
 	};
 	var roomtemp = $('#graphCanvas').data('dataset');
 	var dates = $('#graphCanvas').data('dates');
+	var numberOfRooms = $('#graphCanvas').data('roomNumber'); 
 	var room1 = roomtemp[0];
 	var room2 = roomtemp[1];
 	var room3 = roomtemp[2];
