@@ -37,10 +37,13 @@ sudo ./AdafruitDHT.py $sensorVersion $gpioNumber
 #Create folder structure
 printf "\nCreating folder structure and logging files....."
 cd ~
-mkdir Temperature_Logging
+sudo mkdir Temperature_Logging
 cd Temperature_Logging
 #Create files
-touch Temp.csv
-touch Humid.csv
+sudo touch Temp.csv
+sudo touch Humid.csv
 #Set read/write permissions
 sudo chmod -R 755 ./Temperature_Logging
+#Get Python script from github
+wget https://raw.githubusercontent.com/emperorcal/pi-hometemperature/master/pi/log.py
+sudo sudo ./log.py $sensorVersion $gpioNumber
