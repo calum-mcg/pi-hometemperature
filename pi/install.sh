@@ -34,3 +34,7 @@ read gpioNumber
 printf "\nTesting sensor....."
 cd examples
 sudo ./AdafruitDHT.py $sensorVersion $gpioNumber
+#Create folder structure
+cd ~
+mkdir tempLogging
+cd tempLogging
