@@ -35,6 +35,12 @@ printf "\nTesting sensor....."
 cd examples
 sudo ./AdafruitDHT.py $sensorVersion $gpioNumber
 #Create folder structure
+printf "\nCreating folder structure and logging files....."
 cd ~
-mkdir tempLogging
-cd tempLogging
+mkdir Temperature_Logging
+cd Temperature_Logging
+#Create files
+touch Temp.csv
+touch Humid.csv
+#Set read/write permissions
+sudo chmod -R 755 ./Temperature_Logging
