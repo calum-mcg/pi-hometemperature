@@ -35,7 +35,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="lock" value="12" />
+          <entry key="lock" value="15" />
           <entry key="py" value="1" />
           <entry key="sh" value="432" />
         </counts>
@@ -43,7 +43,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="298" />
-          <entry key="PLAIN_TEXT" value="146" />
+          <entry key="PLAIN_TEXT" value="149" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -55,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="213">
-              <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -87,6 +87,7 @@
     <findStrings>
       <find>ffi</find>
       <find>sprockets</find>
+      <find>rack</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -246,7 +247,7 @@
     <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
