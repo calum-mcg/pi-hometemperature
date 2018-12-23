@@ -1,6 +1,8 @@
+# Code is adapted from Adafruit library with additions to log time, date as well into CSV files
 import sys
 import Adafruit_DHT
-
+import datetime
+import csv
 
 # Parse command line parameters.
 sensor_args = { '11': Adafruit_DHT.DHT11,
@@ -18,9 +20,6 @@ else:
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
 humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 
-# Un-comment the line below to convert the temperature to Fahrenheit.
-# temperature = temperature * 9/5.0 + 32
-
 # Note that sometimes you won't get a reading and
 # the results will be null (because Linux can't
 # guarantee the timing of calls to read the sensor).
@@ -30,3 +29,23 @@ if humidity is not None and temperature is not None:
 else:
     print('Failed to get reading. Try again!')
     sys.exit(1)
+
+#Get time and date
+now = datetime.datetime.now()
+time_now = "{}:{}:{}, {}/{}/{}".format(now.hour, now.minute, now.second, now.day, now.month, now.year)
+
+#Write to csv
+temperature_row = [temperature, time_now]
+humidity_row = [humidity, time_now]
+temperature_filename = "Temp.csv"
+humidity_filename = "Humid.csv"
+with open(temperature_filename, 'a') as csvFile:
+    writer = csv.writer(csvFile)
+    writer.writerow(temperature_row)
+csvFile.close()
+with open(humidity_filename, 'a') as csvFile:
+    writer = csv.writer(csvFile)
+    writer.writerow(humidity_row)
+csvFile.close()
+
+
