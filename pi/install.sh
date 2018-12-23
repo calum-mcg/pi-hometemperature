@@ -50,7 +50,7 @@ sudo sudo python3 ./log.py $sensorVersion $gpioNumber
 printf "\nCreating cronjob....."
 sudo crontab -l > mycron
 #echo new cron into cron file
-sudo echo "* * * * * python3 /home/pi/Temperature_Logging/log.py $sensorVersion $gpioNumber" >> mycron
+sudo echo "* * * * * sudo python3 /home/pi/Temperature_Logging/log.py $sensorVersion $gpioNumber" >> mycron
 #install new cron file
 sudo crontab mycron
 sudo rm mycron
