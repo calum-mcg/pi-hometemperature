@@ -47,3 +47,4 @@ sudo chmod -R 755 ../Temperature_Logging
 #Get Python script from github
 wget https://raw.githubusercontent.com/emperorcal/pi-hometemperature/master/pi/log.py
 sudo sudo python3 ./log.py $sensorVersion $gpioNumber
+#Create cronjob

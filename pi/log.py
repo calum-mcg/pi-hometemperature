@@ -33,7 +33,7 @@ else:
 #Get time and date
 now = datetime.datetime.now()
 time_now = "{}:{}:{}".format(now.hour, now.minute, now.second)
-date_now = "{}/{}/{}".format( now.day, now.month, now.year)
+date_now = "{}/{}/{}".format(now.day, now.month, now.year)
 
 #Write to csv
 temperature_row = [temperature, time_now, date_now]
@@ -44,9 +44,9 @@ with open(temperature_filename, 'a') as csvFile:
     writer = csv.writer(csvFile)
     writer.writerow(temperature_row)
 csvFile.close()
-with open(humidity_filename, 'a') as csvFile:
-    writer = csv.writer(csvFile)
+with open(humidity_filename, 'a') as csvFile2:
+    writer = csv.writer(csvFile2)
     writer.writerow(humidity_row)
-csvFile.close()
+csvFile2.close()
 
 
