@@ -32,11 +32,12 @@ else:
 
 #Get time and date
 now = datetime.datetime.now()
-time_now = "{}:{}:{}, {}/{}/{}".format(now.hour, now.minute, now.second, now.day, now.month, now.year)
+time_now = "{}:{}:{}".format(now.hour, now.minute, now.second)
+date_now = "{}/{}/{}".format( now.day, now.month, now.year)
 
 #Write to csv
-temperature_row = [temperature, time_now]
-humidity_row = [humidity, time_now]
+temperature_row = [temperature, time_now, date_now]
+humidity_row = [humidity, time_now, date_now]
 temperature_filename = "Temp.csv"
 humidity_filename = "Humid.csv"
 with open(temperature_filename, 'a') as csvFile:
