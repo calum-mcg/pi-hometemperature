@@ -35,7 +35,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="lock" value="16" />
+          <entry key="lock" value="18" />
           <entry key="py" value="1" />
           <entry key="sh" value="432" />
         </counts>
@@ -43,7 +43,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="298" />
-          <entry key="PLAIN_TEXT" value="150" />
+          <entry key="PLAIN_TEXT" value="152" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -55,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="213">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -247,7 +247,7 @@
     <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
         </state>
       </provider>
     </entry>
