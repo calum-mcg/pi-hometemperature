@@ -37,12 +37,12 @@
         <counts>
           <entry key="lock" value="18" />
           <entry key="py" value="406" />
-          <entry key="sh" value="875" />
+          <entry key="sh" value="876" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="741" />
+          <entry key="Bash" value="742" />
           <entry key="PLAIN_TEXT" value="152" />
           <entry key="Python" value="406" />
         </counts>
@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pi/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            <state relative-caret-position="483">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -250,8 +250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pi/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        <state relative-caret-position="483">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
         </state>
       </provider>
     </entry>
