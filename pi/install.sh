@@ -37,7 +37,7 @@ sudo ./AdafruitDHT.py $sensorVersion $gpioNumber
 #Create folder structure
 printf "\nCreating folder structure and logging files....."
 cd ~
-sudo mkdir Temperature_Logging
+sudo mkdir -p Temperature_Logging
 cd Temperature_Logging
 #Create files
 sudo touch Temp.csv
