@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #Check for updates
-printf "\nChecking for updates....."
+printf "\nChecking for updates.....\n\n"
 sudo apt-get update
 #Install essential python libraries
-printf "\nInstalling essential Python libraries (Python 2 and 3)....."
+printf "\nInstalling essential Python libraries (Python 2 and 3).....\n\n"
 sudo apt-get install build-essential python-dev python-openssl git
 sudo apt-get install python3 python3-dev python3-setuptools
 #Cloning Adafruit Python Libraries
@@ -11,7 +11,7 @@ printf "\nCloning Adafruit Python Libraries....."
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 cd Adafruit_Python_DHT
 #Install Adafruit library for Python 2 & 3
-printf "\nInstalling essential Python libraries....."
+printf "\nInstalling essential Python libraries.....\n\n"
 sudo python setup.py install
 sudo python3 setup.py install
 #Get DHT sensor type as variable
@@ -25,7 +25,7 @@ printf "\nTesting sensor....."
 cd examples
 sudo ./AdafruitDHT.py $sensorVersion $gpioNumber
 #Create folder structure
-printf "\nCreating folder structure and logging files....."
+printf "\nCreating folder structure and logging files.....\n\n"
 cd /home/pi/
 sudo mkdir -p Temperature_Logging
 cd Temperature_Logging
@@ -38,7 +38,7 @@ sudo chmod -R 755 ../Temperature_Logging
 wget https://raw.githubusercontent.com/emperorcal/pi-hometemperature/master/pi/log.py
 sudo python3 /home/pi/Temperature_Logging/log.py $sensorVersion $gpioNumber
 #Create cronjobs
-printf "\nCreating cronjob....."
+printf "\nCreating cronjob.....\n\n"
 sudo crontab -l > mycron
 #echo new cron into cron file
 sudo echo "* * * * * sudo python3 /home/pi/Temperature_Logging/log.py $sensorVersion $gpioNumber" >> mycron
@@ -46,7 +46,7 @@ sudo echo "* * * * * sudo python3 /home/pi/Temperature_Logging/log.py $sensorVer
 sudo crontab mycron
 sudo rm mycron
 #Install rails
-printf "\nInstalling requirements for rails....."
+printf "\nInstalling requirements for rails.....\n\n"
 cd /home/pi/
 sudo apt-get install -y git curl zlib1g-dev subversion
 sudo apt-get install -y openssl libreadline6-dev git-core zlib1g libssl-dev
@@ -55,7 +55,9 @@ sudo apt-get install -y libxml2-dev libxslt-dev
 sudo apt-get install -y autoconf automake libtool bison
 sudo curl -L get.rvm.io | bash -s stable --rails
 #If this fails you may need to use the gpg2 --keyserver command given as an error message to update the signatures
-sudo source ~/.rvm/scripts/rvm
+source /home/pi/.rvm/scripts/rvm
 #Copy rails project over from Github
 cd Temperature_Logging
 sudo svn checkout https://github.com/emperorcal/pi-hometemperature/trunk/dashboard
+cd dashboard
+
