@@ -38,8 +38,8 @@ date_now = "{}/{}/{}".format(now.day, now.month, now.year)
 #Write to csv
 temperature_row = [temperature, time_now, date_now]
 humidity_row = [humidity, time_now, date_now]
-temperature_filename = "Temp.csv"
-humidity_filename = "Humid.csv"
+temperature_filename = "/home/pi/Temperature_Logging/Temp.csv"
+humidity_filename = "/home/pi/Temperature_Logging/Humid.csv"
 with open(temperature_filename, 'a') as csvFile:
     writer = csv.writer(csvFile)
     writer.writerow(temperature_row)
