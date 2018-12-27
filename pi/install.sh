@@ -15,9 +15,6 @@ sudo apt-get install -y libxml2-dev libxslt-dev
 sudo apt-get install -y autoconf automake libtool bison
 curl -L get.rvm.io | bash -s stable --rails
 source ~/.rvm/scripts/rvm
-#Installing MTA
-printf "\nInstalling MTA (postfix)....."
-sudo apt-get install -y postfix
 #Cloning Adafruit Python Libraries
 printf "\nCloning Adafruit Python Libraries....."
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
