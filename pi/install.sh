@@ -53,7 +53,7 @@ sudo apt-get install -y openssl libreadline6-dev git-core zlib1g libssl-dev
 sudo apt-get install -y libyaml-dev libsqlite3-dev sqlite3
 sudo apt-get install -y libxml2-dev libxslt-dev
 sudo apt-get install -y autoconf automake libtool bison
-sudo curl -L get.rvm.io | bash -s stable --rails
+sudo curl -L get.rvm.io | sudo bash -s stable --rails
 #If this fails you may need to use the gpg2 --keyserver command given as an error message to update the signatures
 source /home/pi/.rvm/scripts/rvm
 #Copy rails project over from Github
