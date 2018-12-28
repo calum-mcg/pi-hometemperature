@@ -56,6 +56,8 @@ sudo apt-get install -y autoconf automake libtool bison
 sudo curl -L get.rvm.io | sudo bash -s stable --rails
 #If this fails you may need to use the gpg2 --keyserver command given as an error message to update the signatures
 source /home/pi/.rvm/scripts/rvm
+#Add user to RVM group
+sudo usermod -a -G rvm $(whoami)
 #Copy rails project over from Github
 cd Temperature_Logging
 sudo svn checkout https://github.com/emperorcal/pi-hometemperature/trunk/dashboard
