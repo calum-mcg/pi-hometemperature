@@ -62,7 +62,7 @@ sudo usermod -a -G rvm $(whoami)
 cd Temperature_Logging
 sudo svn checkout https://github.com/emperorcal/pi-hometemperature/trunk/dashboard
 #Set read/write permissions
-sudo chmod -R 755 /home/pi/Temperature_Logging/dashboard
+sudo chown -R $(whoami):$(whoami) dashboard
 cd dashboard
 #Install JS for Rails
 gem install execjs
