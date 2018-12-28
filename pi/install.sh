@@ -66,7 +66,7 @@ sudo chmod -R 755 /home/pi/Temperature_Logging/dashboard
 cd dashboard
 #Install JS for Rails
 gem install execjs
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
 #Install bundler and Rails dependencies
 gem install bundler
 bundler update
