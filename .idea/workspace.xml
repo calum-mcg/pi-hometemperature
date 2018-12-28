@@ -22,6 +22,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Gemfile" value="1" />
           <entry key="lock" value="1" />
           <entry key="py" value="1" />
           <entry key="sh" value="1" />
@@ -29,7 +30,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -37,12 +38,12 @@
         <counts>
           <entry key="lock" value="18" />
           <entry key="py" value="455" />
-          <entry key="sh" value="1165" />
+          <entry key="sh" value="1276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="1031" />
+          <entry key="Bash" value="1142" />
           <entry key="PLAIN_TEXT" value="152" />
           <entry key="Python" value="455" />
         </counts>
@@ -54,17 +55,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
+            <state relative-caret-position="213">
               <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/Gemfile">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pi/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="561">
+              <caret line="62" selection-start-line="62" selection-end-line="62" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -133,6 +139,11 @@
             <path>
               <item name="pi-hometemperature" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi-hometemperature" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pi-hometemperature" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi-hometemperature" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pi-hometemperature" type="b2602c69:ProjectViewProjectNode" />
@@ -231,13 +242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pi/log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -248,10 +252,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Gemfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pi/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        <state relative-caret-position="561">
+          <caret line="62" selection-start-line="62" selection-end-line="62" selection-end-column="56" />
         </state>
       </provider>
     </entry>
