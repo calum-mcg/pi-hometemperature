@@ -2,12 +2,14 @@ $(document).ready(function(){
 
     $('#download_data').click(function(){
 	  $("#temperatureChart").get(0).toBlob(function(blob) {
+	  	console.log('download');
 	    saveAs(blob, "temperatureChart");
 	  });
     });
 
     $('#save_image').click(function(){
 	  $("#temperatureChart").get(0).toBlob(function(blob) {
+	    console.log('image');
 	    saveAs(blob, "temperatureChart");
 	  });
     });

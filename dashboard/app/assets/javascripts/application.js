@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require moment
+//= require table2csv
 //= require jquery3
 //= require jquery_ujs
 //= require_tree .

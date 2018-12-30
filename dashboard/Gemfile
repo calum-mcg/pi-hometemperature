@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 #Require ChartJS
 gem 'chart-js-rails'
+#Require Table2CSV
+gem 'table2csv'
 #Require filesaver for image
 gem 'filesaverjs-rails'
 # Use Redis adapter to run Action Cable in production
