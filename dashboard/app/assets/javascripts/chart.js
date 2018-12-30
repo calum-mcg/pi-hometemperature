@@ -58,6 +58,10 @@ $(document).ready(function(){
 						unitStepSize: 1,
 						displayFormats: {
 					    	'day': 'DD MMM'
+					},
+					scaleLabel: {
+						display: true,
+						fontSize: 16
 					}
 					}
 				}],

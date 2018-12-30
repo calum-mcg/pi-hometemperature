@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92769332-dd31-4920-bd90-78040e8dbdf3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app/assets/javascripts/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app/views/dashboard/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,41 +19,42 @@
     <session id="1311064486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="5" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="1" />
+          <entry key="Gemfile" value="2" />
           <entry key="Rakefile" value="1" />
-          <entry key="coffee" value="1" />
+          <entry key="coffee" value="2" />
           <entry key="erb" value="3" />
-          <entry key="js" value="3" />
-          <entry key="json" value="1" />
-          <entry key="lock" value="1" />
+          <entry key="js" value="8" />
+          <entry key="json" value="2" />
+          <entry key="lock" value="2" />
           <entry key="py" value="1" />
-          <entry key="rb" value="10" />
-          <entry key="ru" value="1" />
+          <entry key="rb" value="11" />
+          <entry key="ru" value="2" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CoffeeScript" value="1" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="3" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="CoffeeScript" value="2" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="8" />
+          <entry key="PLAIN_TEXT" value="22" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="1" />
+          <entry key="Gemfile" value="29" />
           <entry key="erb" value="35" />
-          <entry key="js" value="572" />
+          <entry key="js" value="592" />
           <entry key="lock" value="18" />
           <entry key="py" value="455" />
           <entry key="rb" value="57" />
@@ -59,8 +64,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="1184" />
-          <entry key="JavaScript" value="572" />
-          <entry key="PLAIN_TEXT" value="245" />
+          <entry key="JavaScript" value="592" />
+          <entry key="PLAIN_TEXT" value="273" />
           <entry key="Python" value="455" />
         </counts>
       </usages-collector>
@@ -78,30 +83,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js">
+        <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            <state relative-caret-position="204">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/app/views/dashboard/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="476">
+              <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-end-line="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/app/models/application_record.rb">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -128,10 +128,11 @@
         <option value="$PROJECT_DIR$/dashboard/Gemfile.lock" />
         <option value="$PROJECT_DIR$/pi/log.py" />
         <option value="$PROJECT_DIR$/pi/install.sh" />
-        <option value="$PROJECT_DIR$/dashboard/Gemfile" />
         <option value="$PROJECT_DIR$/dashboard/app/controllers/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/dashboard/app/views/dashboard/index.html.erb" />
+        <option value="$PROJECT_DIR$/dashboard/Gemfile" />
         <option value="$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js" />
+        <option value="$PROJECT_DIR$/dashboard/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -141,15 +142,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/dashboard/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/dashboard/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -180,20 +184,27 @@
               <item name="pi-hometemperature" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pi-hometemperature" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi-hometemperature" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pi-hometemperature" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi-hometemperature" type="462c0819:PsiDirectoryNode" />
-              <item name="pi" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pi-hometemperature" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi-hometemperature" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,7 +257,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17986578" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18255034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,27 +297,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/Rakefile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/config.ru">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/test/controllers/dashboard_controller_test.rb">
@@ -322,9 +313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#96#106#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -335,29 +323,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/dashboard.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/app/channels/application_cable/connection.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/app/channels/application_cable/channel.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/app/models/application_record.rb">
+    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/dashboard.coffee">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/cable.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/config/manifest.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/config.ru">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/app/views/dashboard/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -369,17 +381,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/app/views/dashboard/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="476">
+          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-end-line="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js">
+    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
