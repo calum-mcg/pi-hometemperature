@@ -32,30 +32,14 @@
 		    <th>Temperature (°C)</th>
 		    <th>Humidity (%)</th>
 		  </tr>
+		  <% @combinedDataset.each do |date, time, temperature, humidity| %>
 		  <tr>
-		    <td>10/01/16</td>
-		    <td>13:22:34</td>
-		    <td>10</td>
-		    <td>12</td>
+		    <td><%= date %></td>
+		    <td><%= time %></td>
+		    <td><%= temperature %></td>
+		    <td><%= humidity %></td>
 		  </tr>
-		  <tr>
-		    <td>10/01/16</td>
-		    <td>13:22:34</td>
-		    <td>10</td>
-		    <td>12</td>
-		  </tr>
-		  <tr>
-		    <td>10/01/16</td>
-		    <td>13:22:34</td>
-		    <td>10</td>
-		    <td>12</td>
-		  </tr>
-		  <tr>
-		    <td>10/01/16</td>
-		    <td>13:22:34</td>
-		    <td>10</td>
-		    <td>12</td>
-		  </tr>
+		  <%end %>
 		</table>
 	</div>
 </div>
