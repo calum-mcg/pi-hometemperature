@@ -29,6 +29,13 @@ $(document).ready(function(){
 				backgroundColor: window.chartColors.red,
 				borderColor: window.chartColors.red,
 	            borderWidth: 1
+	        }, {
+                label: 'Humidity',
+	            data: roomhumidity,
+	            fill: false,
+				backgroundColor: window.chartColors.blue,
+				borderColor: window.chartColors.blue,
+	            borderWidth: 1
 	        }]
 	    },
 	    options: {
