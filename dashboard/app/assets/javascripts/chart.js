@@ -24,6 +24,7 @@ $(document).ready(function(){
 	        labels: dates,
 	        datasets: [{
 	            label: 'Temperature',
+                yAxisID: 'temperature',
 	            data: roomtemp,
 	            fill: false,
 				backgroundColor: window.chartColors.red,
@@ -31,6 +32,7 @@ $(document).ready(function(){
 	            borderWidth: 1
 	        }, {
                 label: 'Humidity',
+                yAxisID: 'humidity',
 	            data: roomhumidity,
 	            fill: false,
 				backgroundColor: window.chartColors.blue,
@@ -51,7 +53,9 @@ $(document).ready(function(){
 					}
 				}],
 				yAxes: [{
+					id: 'temperature',
 					display: true,
+					position: 'left',
 					scaleLabel: {
 						display: true,
 						labelString: String.fromCharCode(176)+"C",
@@ -61,14 +65,28 @@ $(document).ready(function(){
 						beginAtZero: true,
 						maxRotation: 0
 					}		
-				}]
+				}, {
+					id: 'humidity',
+				    display: true,
+                    position: 'right',
+					scaleLabel: {
+						display: true,
+						labelString: "%",
+						fontSize: 16
+					},
+					ticks: {
+						beginAtZero: true,
+						maxRotation: 0
+					}
+                }]
 			},
 		tooltips: {
 	            enabled: true,
 	            mode: 'single',
 	            callbacks: {
-	                label: function(tooltipItems, data) { 
-	                    return tooltipItems.yLabel + String.fromCharCode(176) + "C";
+	                label: function(tooltipItems, data) {
+	                    console.log(data);
+	                    return tooltipItems.yLabel;
 	                	}
 	            }
 	        }
