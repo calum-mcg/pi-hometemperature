@@ -12,7 +12,15 @@ $(document).ready(function(){
 	var roomtemp = $('#graphCanvas').data('temperatures');
 	var roomhumidity = $('#graphCanvas').data('humidities');
 	var dates = $('#graphCanvas').data('dates');
-	//Possibility of adding multiple rooms here, insert loop to go through 2D array
+	var times = $('#graphCanvas').data('times');
+	//Create datetime
+    var datetime = [];
+    if (dates.length === times.length) {
+        for(var i=0;i<dates.length;i++)
+            datetime.push(dates[i]+" "+times[i]);
+    }
+
+    //Possibility of adding multiple rooms here, insert loop to go through 2D array
     //var room1 = roomtemp[0];
 	//var numberOfRooms = $('#graphCanvas').data('roomNumber');
 
@@ -20,7 +28,7 @@ $(document).ready(function(){
 	var myChart = new Chart(ctx, {
 	    type: 'line',
 	    data: {
-	        labels: dates,
+	        labels: datetime,
 	        datasets: [{
 	            label: 'Temperature',
                 yAxisID: 'temperature',
@@ -43,12 +51,14 @@ $(document).ready(function(){
 			scales: {
 				xAxes: [{
 					display: true,
-					scaleLabel: {
-						display: true,
-						fontSize: 16
-					},
+					type: 'time',
 					time: {
-					unit: 'day'
+						unit: 'day',
+						parser: 'DD/MM/YY HH:mm:ss',
+						unitStepSize: 1,
+						displayFormats: {
+					    	'day': 'DD MMM'
+					}
 					}
 				}],
 				yAxes: [{
