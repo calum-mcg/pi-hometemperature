@@ -1,15 +1,11 @@
 $(document).ready(function(){
 
     $('#download_data').click(function(){
-	  $("#temperatureChart").get(0).toBlob(function(blob) {
-	  	console.log('download');
-	    saveAs(blob, "temperatureChart");
-	  });
+        //Manually save Data Table to CSV - $('#datatable') TODO
     });
 
     $('#save_image').click(function(){
 	  $("#temperatureChart").get(0).toBlob(function(blob) {
-	    console.log('image');
 	    saveAs(blob, "temperatureChart");
 	  });
     });

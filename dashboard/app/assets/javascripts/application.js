@@ -10,12 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require moment
-//= require table2csv
 //= require jquery3
 //= require jquery_ujs
 //= require_tree .
 //= require turbolinks
-//= require_tree .
+//= require moment
 //= require Chart.min
 //= require FileSaver
