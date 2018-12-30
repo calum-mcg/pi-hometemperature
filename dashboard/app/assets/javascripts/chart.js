@@ -14,8 +14,7 @@ $(document).ready(function(){
 	var dates = $('#graphCanvas').data('dates');
 	//Possibility of adding multiple rooms here, insert loop to go through 2D array
     //var room1 = roomtemp[0];
-	var numberOfRooms = $('#graphCanvas').data('roomNumber');
-	console.log($('#graphCanvas').data())
+	//var numberOfRooms = $('#graphCanvas').data('roomNumber');
 
 	var ctx = document.getElementById("temperatureChart").getContext('2d');
 	var myChart = new Chart(ctx, {
@@ -85,8 +84,13 @@ $(document).ready(function(){
 	            mode: 'single',
 	            callbacks: {
 	                label: function(tooltipItems, data) {
-	                    console.log(data);
-	                    return tooltipItems.yLabel;
+                        if (tooltipItems.datasetIndex === 0) {
+                           return tooltipItems.yLabel + String.fromCharCode(176)+"C";
+                        } else if (tooltipItems.datasetIndex === 1) {
+                            return tooltipItems.yLabel + "%";
+                        } else {
+                            return "N/A";
+                        }
 	                	}
 	            }
 	        }
