@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92769332-dd31-4920-bd90-78040e8dbdf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dashboard/app/assets/javascripts/exportcsv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/app/controllers/dashboard_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app/controllers/dashboard_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +28,7 @@
           <entry key="Rakefile" value="1" />
           <entry key="coffee" value="2" />
           <entry key="erb" value="5" />
-          <entry key="js" value="10" />
+          <entry key="js" value="11" />
           <entry key="json" value="2" />
           <entry key="lock" value="2" />
           <entry key="py" value="1" />
@@ -44,7 +42,7 @@
         <counts>
           <entry key="CoffeeScript" value="2" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="10" />
+          <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="Python" value="1" />
           <entry key="SCSS" value="5" />
@@ -54,7 +52,7 @@
         <counts>
           <entry key="Gemfile" value="56" />
           <entry key="erb" value="241" />
-          <entry key="js" value="709" />
+          <entry key="js" value="742" />
           <entry key="lock" value="18" />
           <entry key="py" value="455" />
           <entry key="rb" value="144" />
@@ -65,7 +63,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="1184" />
-          <entry key="JavaScript" value="709" />
+          <entry key="JavaScript" value="742" />
           <entry key="PLAIN_TEXT" value="593" />
           <entry key="Python" value="455" />
           <entry key="SCSS" value="58" />
@@ -84,11 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/exportcsv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
+            <state relative-caret-position="697">
               <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -117,7 +124,6 @@
         <option value="$PROJECT_DIR$/pi/log.py" />
         <option value="$PROJECT_DIR$/pi/install.sh" />
         <option value="$PROJECT_DIR$/dashboard/app/assets/javascripts/chart.js" />
-        <option value="$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js" />
         <option value="$PROJECT_DIR$/dashboard/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/dashboard/Gemfile" />
         <option value="$PROJECT_DIR$/dashboard/app/assets/stylesheets/panel.scss" />
@@ -126,6 +132,7 @@
         <option value="$PROJECT_DIR$/dashboard/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/dashboard/app/controllers/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/dashboard/app/assets/javascripts/exportcsv.js" />
+        <option value="$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js" />
       </list>
     </option>
   </component>
@@ -382,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -458,8 +458,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/exportcsv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
+        <state relative-caret-position="697">
           <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/app/assets/javascripts/buttons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>

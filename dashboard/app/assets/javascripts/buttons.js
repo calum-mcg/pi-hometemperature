@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $('#download_data').click(function(){
-        //Manually save Data Table to CSV - $('#datatable') TODO
+        exportTableToCSV('TempandHumiditityDataset.csv')
     });
 
     $('#save_image').click(function(){
