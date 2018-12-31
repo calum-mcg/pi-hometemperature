@@ -59,3 +59,14 @@
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
+
+.front {
+  position: relative;
+  height:20vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back {
+  top: 0;
+}
