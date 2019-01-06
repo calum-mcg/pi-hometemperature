@@ -36,7 +36,9 @@ $(document).ready(function(){
 	            fill: false,
 				backgroundColor: window.chartColors.red,
 				borderColor: window.chartColors.red,
-	            borderWidth: 1
+	            borderWidth: 1,
+				pointRadius: 1,
+				pointHoverRadius: 5
 	        }, {
                 label: 'Humidity',
                 yAxisID: 'humidity',
@@ -44,7 +46,9 @@ $(document).ready(function(){
 	            fill: false,
 				backgroundColor: window.chartColors.blue,
 				borderColor: window.chartColors.blue,
-	            borderWidth: 1
+	            borderWidth: 1,
+				pointRadius: 1,
+				pointHoverRadius: 5
 	        }]
 	    },
 	    options: {
@@ -75,7 +79,7 @@ $(document).ready(function(){
 						fontSize: 16
 					},
 					ticks: {
-						beginAtZero: true,
+						beginAtZero: false,
 						maxRotation: 0
 					}		
 				}, {
@@ -88,7 +92,7 @@ $(document).ready(function(){
 						fontSize: 16
 					},
 					ticks: {
-						beginAtZero: true,
+						beginAtZero: false,
 						maxRotation: 0
 					}
                 }]
