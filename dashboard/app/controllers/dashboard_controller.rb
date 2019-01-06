@@ -1,10 +1,26 @@
+require 'csv'
 class DashboardController < ApplicationController
   def index
-  	@temperatureDataset = [18,17,18,19,21,22]
-  	@humidityDataset = [55,55,55,55,55,55]
-  	@dates = ["17/04/18", "18/04/18", "19/04/18", "20/04/18", "21/04/18", "22/04/18"]
-  	@times = ["11:49:00", "10:49:00", "11:49:00", "23:49:00", "11:49:00", "01:49:00"]
-  	@roomNumber = 1
+  	#Read CSV files for Temperature and Humidity
+  	csvHumidity = File.read(File.dirname(File.expand_path('.')) + '/Humid.csv')
+  	csvTemperature = File.read(File.dirname(File.expand_path('.')) + '/Temp.csv')
+  	humidityArray = CSV.parse(csvHumidity, :headers => false)
+  	temperatureArray = CSV.parse(csvTemperature, :headers => false)
+
+  	#Get columns from CSV arrays
+  	temperatureColumn = temperatureArray.map {|row| row[0]}
+  	@times = temperatureArray.map {|row| row[1]}
+  	@dates = temperatureArray.map {|row| row[2]}
+  	humidityColumn = humidityArray.map {|row| row[0]}
+
+  	#Ensure Temperature and Humidity to two decimal points
+  	@temperatureDataset = temperatureColumn.map! {|item| '%.2f' % item.to_f}
+  	@humidityDataset = humidityColumn.map! {|item| '%.2f' % item.to_f}
+
+  	#Combine arrays into one in order to dynamically create the data table
   	@combinedDataset = @dates.zip(@times, @temperatureDataset, @humidityDataset)
+
+  	#TODO: Allow possibility of multiple rooms
+  	@roomNumber = 1
   end
 end
