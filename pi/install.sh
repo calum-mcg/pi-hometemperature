@@ -69,6 +69,8 @@ sudo apt-get install -y openssl libreadline6-dev git-core zlib1g libssl-dev
 sudo apt-get install -y libyaml-dev libsqlite3-dev sqlite3
 sudo apt-get install -y libxml2-dev libxslt-dev
 sudo apt-get install -y autoconf automake libtool bison
+sudo apt-get install -y gnupg2
+sudo apt-get install -y dirmngr
 sudo curl -L get.rvm.io | sudo bash -s stable --rails
 
 #WARNING----
