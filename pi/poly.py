@@ -65,8 +65,11 @@ for i, degree in enumerate([6, 7, 8]):
     model.fit(X, y)
     humid_dataframe["Poly_"+str(degree)] = model.predict(X)
 
+temperature_filename = "/home/pi/Temperature_Logging/Temp.csv"
+humidity_filename = "/home/pi/Temperature_Logging/Humid.csv"
+
 # Store updated dataframes in CSV files
-temp_dataframe.to_csv('Temp.csv', header=False)
-humid_dataframe.to_csv('Humid.csv', header=False)
+temp_dataframe.to_csv(temperature_filename, header=False, index=False)
+humid_dataframe.to_csv(humidity_filename, header=False, index=False)
 
 print("--- %s seconds ---" % (time.time() - start_time))

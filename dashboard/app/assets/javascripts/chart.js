@@ -13,6 +13,7 @@ $(document).ready(function(){
 	var roomhumidity = $('#graphCanvas').data('humidities');
 	var dates = $('#graphCanvas').data('dates');
 	var times = $('#graphCanvas').data('times');
+
 	//Create datetime
     var datetime = [];
     if (dates.length === times.length) {
