@@ -49,6 +49,7 @@ sudo chmod -R 755 ../Temperature_Logging
 #Get Python script from github
 wget https://raw.githubusercontent.com/emperorcal/pi-hometemperature/master/pi/log.py
 sudo python3 /home/pi/Temperature_Logging/log.py $sensorVersion $gpioNumber
+wget https://raw.githubusercontent.com/emperorcal/pi-hometemperature/master/pi/poly.py
 
 #Create cronjobs
 printf "\nCreating cronjob.....\n\n"
@@ -56,6 +57,7 @@ sudo crontab -l > mycron
 
 #Echo new cron into cron file
 sudo echo "* * * * * sudo python3 /home/pi/Temperature_Logging/log.py $sensorVersion $gpioNumber" >> mycron
+sudo echo "*/5 * * * * sudo python3 /home/pi/Temperature_Logging/poly.py" >> mycron
 
 #Install new cron file
 sudo crontab mycron
