@@ -1,4 +1,4 @@
-# Code is adapted from Adafruit library with additions to log time, date as well into CSV files
+# Code is adapted from Adafruit library with additions to log time and date into CSV files
 import sys
 import Adafruit_DHT
 import datetime

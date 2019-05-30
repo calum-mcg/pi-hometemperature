@@ -7,13 +7,20 @@ class DashboardController < ApplicationController
   	humidityArray = CSV.parse(csvHumidity, :headers => false)
   	temperatureArray = CSV.parse(csvTemperature, :headers => false)
 
-  	#Get columns from CSV arrays
+  	#Get columns from temperature CSV array
   	temperatureColumn = temperatureArray.map {|row| row[0]}
   	@times = temperatureArray.map {|row| row[1]}
   	@dates = temperatureArray.map {|row| row[2]}
-  	humidityColumn = humidityArray.map {|row| row[0]}
+    @temperaturePoly6 = temperatureArray.map {|row| row[3]}
+    @temperaturePoly7 = temperatureArray.map {|row| row[4]}
+    @temperaturePoly8 = temperatureArray.map {|row| row[5]}
 
-  	#Ensure Temperature and Humidity to two decimal points
+  	humidityColumn = humidityArray.map {|row| row[0]}
+    @humidityPoly6 = humidityArray.map {|row| row[3]}
+    @humidityPoly7 = humidityArray.map {|row| row[4]}
+    @humidityPoly8 = humidityArray.map {|row| row[5]}
+
+  	#Ensure Temperature, Humidity to two decimal points
   	@temperatureDataset = temperatureColumn.map! {|item| '%.2f' % item.to_f}
   	@humidityDataset = humidityColumn.map! {|item| '%.2f' % item.to_f}
 

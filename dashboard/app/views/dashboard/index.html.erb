@@ -21,7 +21,7 @@
 
 <div class = "panel2">
 	<div class = "front">
-		<%= content_tag "div", id: "graphCanvas", data: {temperatures: @temperatureDataset, humidities: @humidityDataset, dates: @dates, times: @times, roomNumber: @roomNumber} do %><% end %>
+		<%= content_tag "div", id: "graphCanvas", data: {temperatures: @temperatureDataset, humidities: @humidityDataset, dates: @dates, times: @times, roomNumber: @roomNumber, tempPoly6: @temperaturePoly6, tempPoly7: @temperaturePoly7, tempPoly8: @temperaturePoly8,  humidPoly6: @humidityPoly6, humidPoly7: @humidityPoly7, humidPoly8: @humidityPoly8 } do %><% end %>
 		<canvas id="temperatureChart"></canvas>
 	</div>
 	<div class = "back">
