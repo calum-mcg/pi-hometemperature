@@ -7,9 +7,12 @@ from datetime import datetime
 import time
 start_time = time.time()
 
+temperature_filename = "/home/pi/Temperature_Logging/Temp.csv"
+humidity_filename = "/home/pi/Temperature_Logging/Humid.csv"
+
 # Load CSVs into dataframes
-temp_dataframe = pd.read_csv('Temp.csv', names=["Temp", "Time", "Date", "Poly6", "Poly7", "Poly8"])
-humid_dataframe = pd.read_csv('Humid.csv', names=["Humid", "Time", "Date", "Poly6", "Poly7", "Poly8"])
+temp_dataframe = pd.read_csv(temperature_filename, names=["Temp", "Time", "Date", "Poly6", "Poly7", "Poly8"])
+humid_dataframe = pd.read_csv(humidity_filename, names=["Humid", "Time", "Date", "Poly6", "Poly7", "Poly8"])
 
 # Store Temp dataframe columns as lists for calcs
 temp_list = temp_dataframe['Temp'].tolist()
@@ -20,8 +23,6 @@ temp_date = temp_dataframe['Date'].tolist()
 humid_list = humid_dataframe['Humid'].tolist()
 humid_time = humid_dataframe['Time'].tolist()
 humid_date = humid_dataframe['Date'].tolist()
-
-print(temp_dataframe)
 
 # Change datetime into timedelta in seconds for Polynomial regression for Temp
 first_datetime_temp = datetime.strptime(temp_date[0] + " " + temp_time[0], "%d/%m/%Y %H:%M:%S")
@@ -50,7 +51,7 @@ X = x[:, np.newaxis]
 for i, degree in enumerate([6, 7, 8]):
     model = make_pipeline(PolynomialFeatures(degree), Ridge())
     model.fit(X, y)
-    temp_dataframe[i-3] = model.predict(X)
+    temp_dataframe["Poly"+str(degree)] = model.predict(X)
     
 # Change time difference and humidity into Numpy array for Scikit
 x = np.array(second_difference_humid)
@@ -63,10 +64,9 @@ X = x[:, np.newaxis]
 for i, degree in enumerate([6, 7, 8]):
     model = make_pipeline(PolynomialFeatures(degree), Ridge())
     model.fit(X, y)
-    humid_dataframe[i-3] = model.predict(X)
+    humid_dataframe["Poly"+str(degree)] = model.predict(X)
 
-temperature_filename = "/home/pi/Temperature_Logging/Temp.csv"
-humidity_filename = "/home/pi/Temperature_Logging/Humid.csv"
+print(temp_dataframe)
 
 # Store updated dataframes in CSV files
 temp_dataframe.to_csv(temperature_filename, header=False, index=False)
