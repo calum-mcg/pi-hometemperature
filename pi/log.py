@@ -35,9 +35,12 @@ now = datetime.datetime.now()
 time_now = "{}:{}:{}".format(now.hour, now.minute, now.second)
 date_now = "{}/{}/{}".format(now.day, now.month, now.year)
 
+#Fill other columns with entry values, to be filled later with poly.py
+empty = 0
+
 #Write to csv
-temperature_row = [temperature, time_now, date_now]
-humidity_row = [humidity, time_now, date_now]
+temperature_row = [temperature, time_now, date_now, empty, empty, empty]
+humidity_row = [humidity, time_now, date_now, empty, empty, empty]
 temperature_filename = "/home/pi/Temperature_Logging/Temp.csv"
 humidity_filename = "/home/pi/Temperature_Logging/Humid.csv"
 with open(temperature_filename, 'a') as csvFile:

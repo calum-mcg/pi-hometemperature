@@ -50,7 +50,7 @@ X = x[:, np.newaxis]
 for i, degree in enumerate([6, 7, 8]):
     model = make_pipeline(PolynomialFeatures(degree), Ridge())
     model.fit(X, y)
-    temp_dataframe["Poly_"+str(degree)] = model.predict(X)
+    temp_dataframe[i-3] = model.predict(X)
     
 # Change time difference and humidity into Numpy array for Scikit
 x = np.array(second_difference_humid)
@@ -63,7 +63,7 @@ X = x[:, np.newaxis]
 for i, degree in enumerate([6, 7, 8]):
     model = make_pipeline(PolynomialFeatures(degree), Ridge())
     model.fit(X, y)
-    humid_dataframe["Poly_"+str(degree)] = model.predict(X)
+    humid_dataframe[i-3] = model.predict(X)
 
 temperature_filename = "/home/pi/Temperature_Logging/Temp.csv"
 humidity_filename = "/home/pi/Temperature_Logging/Humid.csv"
