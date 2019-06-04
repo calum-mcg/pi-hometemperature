@@ -189,9 +189,9 @@ $(document).ready(function(){
 	            callbacks: {
 	                label: function(tooltipItems, data) {
 	                	console.log(tooltipItems.datasetIndex);
-                        if (tooltipItems.datasetIndex === 0) {
+                        if (tooltipItems.datasetIndex < 4) {
                            return tooltipItems.yLabel + String.fromCharCode(176)+"C";
-                        } else if (tooltipItems.datasetIndex === 1) {
+                        } else if (tooltipItems.datasetIndex >= 4) {
                             return tooltipItems.yLabel + "%";
                         } else {
                             return "N/A";
