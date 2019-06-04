@@ -21,39 +21,11 @@
 
 <div class = "panel2">
 	<div class = "front">
-		<%= content_tag "div", id: "graphCanvas", data: {temperatures: @temperatureDataset, humidities: @humidityDataset, dates: @dates, times: @times, roomNumber: @roomNumber, tempPoly6: @temperaturePoly6, tempPoly7: @temperaturePoly7, tempPoly8: @temperaturePoly8,  humidPoly6: @humidityPoly6, humidPoly7: @humidityPoly7, humidPoly8: @humidityPoly8 } do %><% end %>
+		<%= content_tag "div", id: "graphCanvas", data: {temperatures: @temperatureDataset, humidities: @humidityDataset, dates: @dates, times: @times, roomnumber: @roomNumber, temppoly6: @tempPoly6, temppoly7: @tempPoly7, temppoly8: @tempPoly8, humidpoly6: @humidPoly6, humidpoly7: @humidPoly7, humidpoly8: @humidPoly8 } do %><% end %>
 		<canvas id="temperatureChart"></canvas>
-		<div class = "checkwrapper">
-			<table>
-				<tr>
-				  <td>
-				       <label  style="word-wrap:break-word">
-				        <input id="checkid"  type="checkbox" value="test" />Temperature
-				     </label>
-				  </td>
-				  <td>
-				      <label  style="word-wrap:break-word">
-				        <input id="checkid"  type="checkbox" value="test" />Temperature Polynomial Regression
-				     </label>
-				  </td>
-				</tr>
-				<tr>
-				  <td>
-				       <label  style="word-wrap:break-word">
-				        <input id="checkid"  type="checkbox" value="test" />Humidity
-				     </label>
-				  </td>
-				  <td>
-				      <label  style="word-wrap:break-word">
-				        <input id="checkid"  type="checkbox" value="test" />Humidity Polynomial Regression
-				     </label>
-				  </td>
-				</tr>
-			</table>
-		</div>
 	</div>
 	<div class = "back">
-		<table id = "datatable">
+		<table id = "datatable" class = "datatable">
 		  <tr>
 		    <th>Date</th>
 		    <th>Time</th>

@@ -11,14 +11,14 @@ class DashboardController < ApplicationController
   	temperatureColumn = temperatureArray.map {|row| row[0]}
   	@times = temperatureArray.map {|row| row[1]}
   	@dates = temperatureArray.map {|row| row[2]}
-    @temperaturePoly6 = temperatureArray.map {|row| row[3]}
-    @temperaturePoly7 = temperatureArray.map {|row| row[4]}
-    @temperaturePoly8 = temperatureArray.map {|row| row[5]}
+    @tempPoly6 = temperatureArray.map {|row| row[3]}
+    @tempPoly7 = temperatureArray.map {|row| row[4]}
+    @tempPoly8 = temperatureArray.map {|row| row[5]}
 
   	humidityColumn = humidityArray.map {|row| row[0]}
-    @humidityPoly6 = humidityArray.map {|row| row[3]}
-    @humidityPoly7 = humidityArray.map {|row| row[4]}
-    @humidityPoly8 = humidityArray.map {|row| row[5]}
+    @humidPoly6 = humidityArray.map {|row| row[3]}
+    @humidPoly7 = humidityArray.map {|row| row[4]}
+    @humidPoly8 = humidityArray.map {|row| row[5]}
 
   	#Ensure Temperature, Humidity to two decimal points
   	@temperatureDataset = temperatureColumn.map! {|item| '%.2f' % item.to_f}
