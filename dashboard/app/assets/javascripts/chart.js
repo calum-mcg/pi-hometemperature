@@ -49,7 +49,6 @@ $(document).ready(function(){
 	            label: 'Temperature',
                 yAxisID: 'temperature',
 	            data: roomTemp,
-	            hidden: true,
 	            fill: false,
 				backgroundColor: window.chartColors.red,
 				borderColor: window.chartColors.red,
@@ -60,7 +59,6 @@ $(document).ready(function(){
 	            label: 'Temperature Polynomial Order 6',
                 yAxisID: 'temperature',
 	            data: tempPoly6,
-	            hidden: true,
 	            fill: false,
 				backgroundColor: window.chartColors.darkred1,
 				borderColor: window.chartColors.darkred1,
@@ -71,7 +69,6 @@ $(document).ready(function(){
 	            label: 'Temperature Polynomial Order 7',
                 yAxisID: 'temperature',
 	            data: tempPoly7,
-	            hidden: true,
 	            fill: false,
 				backgroundColor: window.chartColors.darkred2,
 				borderColor: window.chartColors.darkred2,
@@ -82,7 +79,6 @@ $(document).ready(function(){
 	            label: 'Temperature Polynomial Order 8',
                 yAxisID: 'temperature',
 	            data: tempPoly8,
-	            hidden: true,
 	            fill: false,
 				backgroundColor: window.chartColors.darkred3,
 				borderColor: window.chartColors.darkred3,
@@ -93,6 +89,7 @@ $(document).ready(function(){
                 label: 'Humidity',
                 yAxisID: 'humidity',
 	            data: roomHumidity,
+	            hidden: true,
 	            fill: false,
 				backgroundColor: window.chartColors.blue,
 				borderColor: window.chartColors.blue,
@@ -135,6 +132,12 @@ $(document).ready(function(){
 	        }]
 	    },
 	    options: {
+	    	legend: {
+	            display: true,
+	            labels: {
+	                boxWidth: 20
+	            }
+	    	},
 			scales: {
 				xAxes: [{
 					display: true,
