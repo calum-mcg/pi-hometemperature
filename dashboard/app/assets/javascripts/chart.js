@@ -16,6 +16,7 @@ $(document).ready(function(){
 	darkgrey: 'rgb(107, 107, 107)'
 	};
 
+	//Get variables from graphCanvas - FYI MUST BE LOWERCASE IN CONTENT TAG
 	var roomTemp = $('#graphCanvas').data('temperatures');
 	var roomHumidity = $('#graphCanvas').data('humidities');
 	var dates = $('#graphCanvas').data('dates');
@@ -26,8 +27,6 @@ $(document).ready(function(){
 	var humidPoly6 = $('#graphCanvas').data('humidpoly6');
 	var humidPoly7 = $('#graphCanvas').data('humidpoly7');
 	var humidPoly8 = $('#graphCanvas').data('humidpoly8');
-
-	console.log(tempPoly6);
 
 	//Create datetime
     var datetime = [];
