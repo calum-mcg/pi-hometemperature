@@ -68,7 +68,7 @@ And similarly for the polynomial (order 2) hypothesis function:
  
 Therefore, the most accurate hypothesis function is where the coefficients (θ) produce the minimum value from the cost function.
 
-In this project, polynomial regression was performed using [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html), a machine learning library for Python. In order to perform regression with time, the time date variable was converted into seconds from start
+In this project, polynomial regression was performed using [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html), a machine learning library for Python. In order to perform regression with time, the time date variable was converted into seconds from start.
 
 
 ## Areas for improvement
