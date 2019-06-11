@@ -7,14 +7,14 @@ An automated temperature and humidity monitoring system using a Raspberry Pi Zer
   <img src="https://i.imgur.com/SD4YvZG.png" width="500">
 </p>
 
-The system uses Python to log temperature and humidity to CSV files on the Pi. Another Python script asynchronously performs polynomial regression on both temperature and humidity and updates the CSV files. A rails application then uses the data within the CSV files to generate a graphical dashboard.
+The system uses Python to log temperature and humidity to CSV files on the Pi. Another Python script asynchronously performs polynomial regression on both the temperature and humidity datasets and updates the CSV files. A rails application then uses the data within the CSV files to generate an interactive, graphical dashboard.
 
 Click [here](https://codepen.io/cjmcguicken/full/OYqGyb) see a demo version of the dashboard, with only a sample slice of data.
 
 ## Installation
 The following guide assumes that Raspbian is already installed and the sensor has been connected to the Pi. Both DHT22 and DHT11 sensors are supported.
 
-For more information on setting up a DHT sensor with the Pi I would recommend [this]( https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/wiring) link.
+For more information on setting up a DHT sensor with the Pi I would recommend [this](https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/wiring) link.
 
 Please note the sensor model and the GPIO port number it is connected to, this is needed for the setup script.
 
@@ -72,5 +72,7 @@ In this project, polynomial regression was performed using [Scikit-learn](https:
 
 
 ## Areas for improvement
-
+* Create an additional Python script to compare the outputs of the Polynomial regression analysis and display the most accurate
+* Improve functionality to allow for multiple devices / rooms
+* Show forecasted temperature and humidity
 
