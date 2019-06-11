@@ -27,9 +27,49 @@ sudo bash install.sh
 
 *Please note: There is a known potential issue when installing Ruby with Raspbian, if an error occurs please ensure keys are set with the 'gpkg' command. More details will be produced in the console if the error occurs.*
 
-Once installed you are good to go! The Pi will regularly record temperature and humidity as well as perform polynomial regression on the datasets. Just run the rails server from the *..home\dashboard\* folder to start the dashboard and view the outputs.
+Once installed you are good to go! The Pi will regularly record temperature and humidity as well as perform polynomial regression on the datasets. Just run the rails server from the _'..home\dashboard\'_ folder to start the dashboard and view the outputs.
 
 ## Theory
+Within this project, regression techniques were used to try and determine the relationship between temperature and time, as well as humidity and time. Regression, put simply, is the process of understanding the relationship between variables.
+Given the example of X and Y below:
+<p align="center">
+  <img height="300" src="https://i.imgur.com/XuYtQwo.png">
+</p>
+
+In order to try and determine the relationship between X and Y, we create a hypothesis function. The generic hypothesis function for linear regression is:
+<p align="center">
+  <img height="40" src="https://i.imgur.com/n92QlZ2.png">
+</p>
+
+And for polynomial regression (order 2):
+<p align="center">
+  <img height="35" src="https://i.imgur.com/iXs35qn.png">
+</p>
+
+To ensure that the hypothesis function is most representative of the actual dataset, a cost function can be used. A cost function measures the accuracy of the hypothesis function by essentially taking an average of the difference between the hypothesis function and actual dataset. 
+A common cost function, known as the ‘mean squared error’ is represented by the following equation:
+<p align="center">
+  <img height="60" src="https://i.imgur.com/GNh3P0k.png">
+</p>
+
+*Where m is the number of data points*
+
+For the linear hypothesis function, this can be shown visually using the X, Y example above: 
+<p align="center">
+  <img height="300" src="https://i.imgur.com/2XuUoL1.png">
+</p>
+
+ 
+And similarly for the polynomial (order 2) hypothesis function:
+<p align="center">
+  <img height="300" src="https://i.imgur.com/jTmQJ6P.png">
+</p>
+
+ 
+Therefore, the most accurate hypothesis function is where the coefficients (θ) produce the minimum value from the cost function.
+
+In this project, polynomial regression was performed using [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html), a machine learning library for Python. In order to perform regression with time, the time date variable was converted into seconds from start
+
 
 ## Areas for improvement
 
