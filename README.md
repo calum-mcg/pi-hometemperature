@@ -1,6 +1,6 @@
 # pi-hometemperature
 ## Summary
-An automated temperature and humidity monitoring system using a Raspberry Pi Zero with a Rails dashboard. 
+An automated temperature and humidity monitoring system using a Raspberry Pi Zero with a Rails dashboard, asynchronously performing polynomial regression.
 
 <p align="center">
   <img src="https://i.imgur.com/8OFh54F.jpg" width="300">
